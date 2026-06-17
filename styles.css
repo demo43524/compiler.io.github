@@ -338,7 +338,7 @@ h3 {
   padding: 0 14px;
   border: 1.5px solid rgba(92, 184, 255, 0.7);
   background: linear-gradient(180deg, #5cb8ff, #2b98d1);
-  color: #ffffff;
+  color: #000000;
   font-weight: 700;
   transition: all 200ms ease;
 }
@@ -347,12 +347,20 @@ h3 {
 .example-select:hover {
   background: linear-gradient(180deg, #6bc4ff, #3ba5e0);
   box-shadow: 0 8px 24px rgba(92, 184, 255, 0.25);
+  color: #000000;
 }
 
 .language-select:focus,
 .example-select:focus {
   outline: none;
   box-shadow: 0 0 0 4px rgba(92, 184, 255, 0.2);
+  color: #000000;
+}
+
+.language-select option,
+.example-select option {
+  color: #000000;
+  background-color: #ffffff;
 }
 
 .language-hint {
@@ -547,6 +555,43 @@ pre {
 
 .back-link {
   color: var(--accent-soft);
+}
+
+/* Ready to Begin Section - Improved Visibility */
+.ready-section {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  margin-top: 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(102, 126, 234, 0.4);
+}
+
+.ready-section h2 {
+  color: #ffffff;
+  margin: 0 0 15px 0;
+}
+
+.ready-section p {
+  color: #f0f0f0;
+  margin: 0 0 20px 0;
+}
+
+.ready-section a {
+  display: inline-block;
+  padding: 12px 30px;
+  background: #ffffff;
+  color: #667eea;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.ready-section a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 @media (max-width: 900px) {
